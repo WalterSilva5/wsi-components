@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico " />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- SCRIPTS -->
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <title>WSI COMPONENTS</title>
+</head>
+
+<body id="app">
+
+    <div class="container-flex col-12" style="min-height: 600px;">
+        <h1 class="text-center"><b>WSI COMPONENTS</b></h1>
+
+        <h4 class="text-danger">###wsi-button</h4>
+        <wsi-button>WSI BUTTON</wsi-button>
+
+        <h4 class="text-danger">###wsi-loggin</h4>
+        <div class="col-4">
+          <wsi-login>
+          </wsi-login>
+        </div>
+
+        <h4 class="text-danger">###wsi-modal</h4>
+        <wsi-button class="w3-red" data-target="#modal_sample" data-toggle="modal">CLICK TO SHOW</wsi-button>
+        <wsi-modal id="modal_sample">
+          <template v-slot:modal_header>
+                  MODAL TITLE
+                </template>
+                <template v-slot:modal_body>
+                    <h1>MODAL BODY</h1>
+                </template>
+        </wsi-modal>
+
+        <h4 class="text-danger">###inputs</h4>
+
+
+        <div class="col-4">
+
+          <h6 class="text-success">#wsi_input</h6>
+          <wsi_input></wsi_input>
+          <h6 class="text-success">#wsi_input_group_left</h6>
+
+          <wsi_input_group_left>
+            <template v-slot:slot_label_left>
+              Label
+            </template>
+            <template v-slot:slot_input>
+              <wsi_input name="teste"></wsi_input>
+            </template>
+          </wsi_input_group_left>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-flex w3-black py-3 text-center">
+            <strong class="text-light h5">WALTER SILVA</strong>  <small>&reg;</small>	 <span id="year"></span>
+        </div>
+    </footer>
+
+    <!-- this script imports all the components and need to be included in the main page of the website -->
+    <script type="module" src="./js/pages/index.js"></script>
+
+</body>
+
+</html>
