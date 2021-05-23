@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/animate.min.css" />
     <link rel="stylesheet" href="./css/hover-min.css" />
     <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- SCRIPTS -->
 
@@ -20,20 +21,32 @@
 </head>
 
 <body id="app">
+    <div class="container-flex col-12 d-flex justify-content-center row w3-black" style="min-height: 700px;">
+        <h1 class="font-weight-bold">WALTER SILVA - COMPONENTS</h1>
 
-    <div class="container-flex col-12" style="min-height: 600px;">
-        <h1 class="text-center"><b>WSI COMPONENTS</b></h1>
-    </div>
 
-    <footer class="footer">
-        <div class="container-flex w3-black py-3 text-center">
-            <strong class="text-light h5">WALTER SILVA</strong>  <small>&reg;</small>	 <span id="year"></span>
+
+        <div class="col-12 container d-flex justify-content-center">
+            <div>
+                <div class="cfit-border-admin rounded">
+                    <h4>CADASTRO - COMPONENT</h4>
+                    <wsi_cadastro class="col-4"></wsi_cadastro>
+                </div>
+
+                <div class="cfit-border-admin rounded my-2">
+                    <h4>LOGIN COMPONENT</h4>
+                    <wsi_login class="row"></wsi_login>
+                </div>
+
+            </div>
         </div>
-    </footer>
-
-    <!-- this script imports all the components and need to be included in the main page of the website -->
-    <script type="module" src="./js/pages/index.js"></script>
-
+        <footer class="footer col-12">
+            <div class="w3-black py-3 text-center">
+                <strong class="text-light h5">WALTER SILVA</strong> <small>&reg;</small> <span id="year"></span>
+            </div>
+        </footer>
+        <!-- this script imports all the components and need to be included in the main page of the website -->
+        <script type="module" src="./js/dist/componentes_compilados.js"></script>
 </body>
 
 </html>

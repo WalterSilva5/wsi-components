@@ -1,0 +1,141 @@
+.row-no-padding {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: orange;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid orange;
+    /* creates padding around scroll thumb */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+[class*="col-"],
+/* Elements whose class attribute begins with "col-" */
+[class^="col-"] {
+    /* Elements whose class attribute contains the substring "col-" */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[class="container"],
+[class="container"] {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cfit-border-orange {
+    border: 1px solid rgba(255, 174, 0, 0.082);
+}
+
+.cfit-border-admin {
+    border: 2px solid rgba(206, 0, 233, 0.932);
+}
+
+.cfit-div-orange{
+    background-color: orange;
+    color:black;
+}
+
+.cfit-button {
+    background-color: rgba(255, 175, 28, 0.171);
+    border: 1px solid rgba(255, 166, 1, 0.397);
+    color: rgb(255, 221, 148);
+    font-weight: bold;
+}
+
+.cfit-button:hover {
+    background-color: rgb(65, 185, 255);
+    color: rgb(255, 255, 255);
+}
+
+.cfit-button-admin {
+    color: rgb(237, 211, 255);
+    background-color: rgba(90, 0, 90, 0.342);
+    border: 1px solid rgba(189, 1, 189, 0.322);
+    width: 100%;
+}
+
+.cfit-button-admin:hover {
+    background-color: rgb(65, 185, 255);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(92, 1, 1, 0.692);
+}
+
+.cfit-div-dark {
+    color: white;
+    background-color: rgba(255, 185, 110, 0.082);
+    border: 1px solid rgba(83, 53, 0, 0.308);
+}
+
+.cfit-div-dark:hover {
+    border: 1px solid rgba(160, 101, 0, 0.342);
+    background-color: rgba(255, 185, 110, 0.099);
+}
+
+.cfit-div-dark-admin input,
+.cfit-div-dark-admin input:active,
+.cfit-div-dark-admin input:focus,
+.cfit-div-dark-admin textarea {
+    color: rgb(0, 0, 0);
+    border: 1px solid purple;
+    background-color: rgb(173, 173, 173);
+}
+
+.cfit-div-dark-admin,
+table,
+td,
+tr,
+th,
+table.table-bordered>thead>tr>th {
+    color: white;
+    background-color: rgb(2, 1, 0);
+    border: 1px solid rgba(56, 0, 94, 0.753);
+}
+
+.cfit-card {
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 8px 8px rgb(148, 67, 0);
+    transition: 1s;
+    animation: tada;
+    animation-duration: 2s;
+}
+
+.cfit-card:hover {
+    box-shadow: 0 0 0;
+    background-color: rgb(255, 241, 232);
+    transition: 3s;
+}
+
+
+.cfit-card img {
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    width: 95%;
+    transition: 1.2s ease;
+
+}
+
+.cfit-card img:hover {
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    transition: 1.2s ease;
+}
